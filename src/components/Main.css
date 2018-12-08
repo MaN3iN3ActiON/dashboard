@@ -1,4 +1,11 @@
 .wrapper {
-	display: flex;
-	align-items: stretch;
+	/* display: flex; */
+	/* align-items: center; */
+	margin: auto;
+	position: absolute;
+	width: calc(100vw - 50px);
+	height: calc(100vh - 50px);
+	top: 50px;
+	left: 50px;
+	background-color: rgb(250,250,250);
 }

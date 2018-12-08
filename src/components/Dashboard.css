@@ -1,7 +1,10 @@
-.display-mid{
-	text-align: center
-}
+
 .custom-dashboard{
-	margin-top: 50px;
+	/* margin-top: 25px; */
 	max-width: 900px;
+	margin: 25px auto;
+}
+.display-mid p{
+	font-size: small;
+	margin-bottom: 2px;
 }

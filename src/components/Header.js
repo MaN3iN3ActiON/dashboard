@@ -3,7 +3,7 @@ import './Header.css'
 import Rupees from '../icons/rupee-24.png'
 import { Navbar, Nav, NavItem, Image } from 'react-bootstrap'
 const Header = () => (
-	<Navbar staticTop inverse collapseOnSelect className={'custom-header'}>
+	<Navbar fixedTop inverse collapseOnSelect className={'custom-header'}>
 		<Navbar.Header>
 			<Navbar.Brand>
 				<a href="#home">whitepanda</a>

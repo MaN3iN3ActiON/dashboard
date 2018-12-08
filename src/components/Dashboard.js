@@ -1,6 +1,7 @@
 import React from 'react'
 import './Dashboard.css'
 import OrderList from './OrderList'
+import logo from '../icons/in-progress-32.png'
 import { Grid, Row, Col, Panel, Button } from 'react-bootstrap'
 
 const Dashboard = () => {
@@ -9,7 +10,7 @@ const Dashboard = () => {
 		{ icon: '', title: 'White Paper', wordLen: '2500-3000' },
 		{ icon: '', title: 'Website Content', wordLen: '250-350' },
 		{ icon: '', title: 'Press Release', wordLen: '350-450' },
-		{ icon: '', title: 'Production Description', wordLen: '150-200' },
+		{ icon: '', title: 'Product Description', wordLen: '150-200' },
 		{ icon: '', title: 'Social Media', wordLen: '30-35' },
 		{ icon: '', title: 'Book/Story Writing', wordLen: '500-1000' },
 		{ icon: '', title: 'Video Script', wordLen: '1000-4000' },
@@ -22,20 +23,22 @@ const Dashboard = () => {
 		<Grid className={'custom-dashboard'}>
 			<OrderList data={dummyData} />
 			<Row>
-				<Col sm={6} md={6}>
-					<Panel className="display-mid">
-						<Panel.Body>
-							<h4>Order from Template</h4>
-							<h6>you can give an order from templates</h6>
+				<Col sm={6} md={6} >
+					<Panel className={'custom-panel'}>
+						<Panel.Body className={'custom-panel-body'}>
+							<img src={logo} alt={'icon'} />
+							<h5>Order from Template</h5>
+							<p>you can give an order from templates</p>
 							<Button bsStyle="success">Order</Button>
 						</Panel.Body>
 					</Panel>
 				</Col>
 				<Col sm={6} md={6}>
-					<Panel className="display-mid">
-						<Panel.Body>
-							<h4>Order via Spreadsheets</h4>
-							<h6>{'It\'s useful when giving bulk orders'}</h6>
+					<Panel className={'custom-panel'}>
+						<Panel.Body className={'custom-panel-body'}>
+							<img src={logo} alt={'icon'} />
+							<h5>Order via Spreadsheets</h5>
+							<p>{'It\'s useful when giving bulk orders'}</p>
 							<Button bsStyle="success">Order</Button>
 						</Panel.Body>
 					</Panel>
