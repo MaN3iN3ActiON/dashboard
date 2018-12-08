@@ -1,15 +1,14 @@
 import React from 'react'
+import './Sidebar.css'
 
 const Sidebar = () => (
-	<aside>
-		<nav>
-			<ul>
-				<li>layout</li>
-				<li>notepad</li>
-				<li>save</li>
-			</ul>
-		</nav>
-	</aside>
+	<nav id={'sidebar'}>
+		<ul className='list-unstyled components'>
+			<li>layout</li>
+			<li>note</li>
+			<li>save</li>
+		</ul>
+	</nav>
 )
 
 export default Sidebar
